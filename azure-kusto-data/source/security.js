@@ -60,6 +60,7 @@ module.exports = class AadHelper {
             this.authMethod = AuthenticationMethod.azLogin;
         } else if (kcsb.accessToken) {
             this.authMethod = AuthenticationMethod.accessToken;
+            this.accessToken = kcsb.accessToken;
         } else {
             this.authMethod = AuthenticationMethod.deviceLogin;
             this.clientId = "db662dc1-0cfe-4e1c-a843-19a68e65be58";
